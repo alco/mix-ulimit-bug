@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ "$1" = "fast" ]; then
+  ulimit -n 4096
+fi
+
+exec time mix deps.get --no-compile
