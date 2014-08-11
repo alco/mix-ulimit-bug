@@ -3,14 +3,13 @@ defmodule Bug.App.Mixfile do
 
   def project do [
     app: :bug,
-    version: "0.0.1",
-    elixir: ">= 0.10.1-dev",
+    version: "0.1.0",
     deps: deps
   ] end
 
   # Configuration for the OTP application
   def application do [
-    applications: %w(inets gproc exmig exdbi_pgsql lager poolboy barrel jsex exlogger folsom cowboy decimex decimal validatex)a,
+    applications: ~w(inets gproc exmig exdbi_pgsql lager poolboy barrel jsex exlogger folsom cowboy decimex decimal validatex)a,
     mod: {Bug.App, []},
     env: env
   ] end

@@ -1,4 +1,4 @@
-FROM bexio/toolchain:latest
+FROM bexio/toolchain:no-ulimit
 
 RUN mkdir -p /src
 ADD ./mix.exs /src/mix.exs

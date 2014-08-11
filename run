@@ -1,7 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
-if [ "$1" = "fast" ]; then
+if [ "$1" = "--fast" ]; then
   ulimit -n 4096
 fi
 
-exec time mix deps.get --no-compile
+time mix deps.get --no-compile
+echo "ulimit was $(ulimit -n)"
