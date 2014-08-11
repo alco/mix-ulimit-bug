@@ -18,18 +18,17 @@ defmodule Bug.App.Mixfile do
   ] end
 
   defp deps do [
-      {:gproc,       github: "uwiger/gproc"},
-      {:exmig,       github: "khia/exmig"},
-      {:exdbi_pgsql, github: "exdbi/exdbi_pgsql"},
-        {:epgsql,    github: "spawngrid/epgsql", override: true},
-      {:lager,       github: "basho/lager"},
-      {:poolboy,     github: "devinus/poolboy"},
-      {:barrel,      github: "spawngrid/barrel"},
-      {:jsex,        github: "talentdeficit/jsex"},
-      {:exlogger,    github: "bexio/exlogger", branch: "hotfix/fig-logging"},
-      {:decimex,     github: "yrashk/decimex"},
-      {:folsom,      github: "boundary/folsom"},
-      {:validatex,   github: "ElixirWerkz/validatex"},
-      {:cowboy,      github: "spawngrid/cowboy", branch: "proxy", override: true}
-  ] end
+    {:gproc,       github: "uwiger/gproc"},
+    {:exmig,       github: "khia/exmig"},
+    {:exdbi_pgsql, github: "khia/exdbi_pgsql"},
+      {:epgsql,    github: "spawngrid/epgsql", override: true},
+    {:poolboy,     github: "devinus/poolboy"},
+    {:barrel,      github: "spawngrid/barrel"},
+    {:jsex,        github: "talentdeficit/jsex"},
+    {:decimex,     github: "khia/decimex"},
+    {:folsom,      github: "boundary/folsom"},
+      {:meck, github: "eproxus/meck", tag: "0.8.2", override: true},
+    {:validatex,   github: "khia/validatex"},
+    {:cowboy,      github: "spawngrid/cowboy", branch: "proxy", override:     true},
+] end
 end
