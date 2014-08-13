@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [ "$1" = "--fast" ]; then
-  ulimit -n 4096
+  ulimit -n 1024
 fi
 
-time mix deps.get --no-compile
+time for i in {1..10}; do mix deps.get; mix deps.clean --all; done
 echo "ulimit was $(ulimit -n)"

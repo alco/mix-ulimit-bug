@@ -32,4 +32,5 @@
   "relex": {:git, "git://github.com/khia/relex.git", "32b434d722add3c84a83a01eccaf8fbb028d3380", []},
   "socket": {:git, "git://github.com/meh/elixir-socket.git", "c8c7b5eb43a6a94a5e98821c69b8639a123cf6f8", []},
   "sockjs": {:git, "git://github.com/spawngrid/sockjs-erlang.git", "0c56bebd8a276fde45b3ffd046f99f42b5238c17", []},
+  "test_dep": {:git, "test_dep", "70411bc17d34c67e32a1fef4c02e055e3ad97984", []},
   "validatex": {:git, "git://github.com/khia/validatex.git", "d4ee3fe1d49faeb2508457eb28f07b3b3698a817", []}}
